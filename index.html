@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babie Weight in Born</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Babie Weight in Born">
+  <meta name="author" content="Fabio Covolo Mazzo">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Babie Weight in Born</h1>
+    <h2>Project for Developing Data Products - Johns Hopkins through Coursera</h2>
+    <p>Fabio Covolo Mazzo<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Discover the impact of maternal age and smoking habits in baby weight</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Smoking is a public health case, with impact in many areas, public spending, private spending, precocious retirement among other problems.</p>
+
+<p>This application shows the impact of mother&#39;s smoking and age in the baby&#39;s weight at birth.</p>
+
+<p>This app uses a &quot;Babies&quot; dataset from UsingR package. </p>
+
+<p>Source: <a href="http://cran.r-project.org/web/packages/UsingR/UsingR.pdf">http://cran.r-project.org/web/packages/UsingR/UsingR.pdf</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>View a distribution</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>You can view a distribution of filtered data in a Histogram with a mean line.</p>
+
+<pre><code class="r"> library(UsingR);data(babies);
+ hist(babies$wt,xlab=&quot;Weight (Onces)&quot;, 
+             main=&quot;Infant&#39;s Birth Weight&quot;,breaks=100)
+        abline(v = mean(babies$wt), col = &quot;blue&quot;, lwd = 2)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>View a datatable</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>View and navigate the data with the date table feature: filter the results, sort, and go deeper into data.</p>
+
+<p><img src="datatable.png" alt="alt text"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Combine filters</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Combine filters to pursue an answer. </p>
+
+<p>Use right now: <a href="http://fabiocmazzo.shinyapps.io/dev_data_products_project">http://fabiocmazzo.shinyapps.io/dev_data_products_project</a></p>
+
+<p><img src="filtros.png" alt="alt text"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Discover the impact of maternal age and smoking habits in baby weight'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='View a distribution'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='View a datatable'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Combine filters'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
